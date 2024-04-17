@@ -1,0 +1,127 @@
+.navbar-brand img {
+    width: 130px; height: 130px;
+
+}
+.navbar-nav ul {
+    align-items: center;
+}
+.navbar-nav li a {
+    color: white !important;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 19px;
+}
+.navbar-nav li a:hover {
+    transform: translateY(2px);
+    font-size: 20px;
+    border-bottom: solid 1px white;
+    transition: 0.9s;
+    color: #d43939 !important;
+}
+.brandName {
+    width: 800px; height: 100px;
+}
+#searchBar {
+    background-color: rgb(206, 203, 203);
+}
+#searchBar:hover {
+    background-color: white;
+}
+.fa-cart-arrow-down {
+    font-size: 28px;
+}
+.carousel-item h1 {
+    font-size: 50px;
+    -webkit-text-stroke: 1px #811919;
+   color: white;
+   text-shadow:
+       3px 3px 0 #811919,
+     -1px -1px 0 #811919,  
+      1px -1px 0 #811919,
+      -1px 1px 0 #811919,
+       1px 1px 0 #811919;
+}
+.carousel-item img {
+    width: fit-content;
+}
+.car-3 h1{
+    margin-top: 50px;
+}
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buyNow {
+    position: absolute;
+    font-size: 60px;
+    z-index: 100;
+    bottom: 50px; right: 100px;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid 2px white;
+    font-family: "Russo One", sans-serif;
+    margin: 0; padding: 0;
+}
+.buyNow:hover {
+    font-size: 62px;
+    transform: translateY(5px);
+    border: solid 5px white;
+    transition: 0.5s;
+    color: #811919;
+}
+.buyHeading {
+    position: absolute; z-index: 100;
+    color: white;
+    /* top: 30%;
+    left: 25%; */
+    font-size: 200px;
+    -webkit-text-stroke: 1px #811919;
+    text-shadow:
+        3px 3px 0 #811919,
+        -1px -1px 0 #811919,  
+        1px -1px 0 #811919,
+        -1px 1px 0 #811919,
+        1px 1px 0 #811919;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+}
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@media screen and (max-width: 1194px){
+    .buyHeading {
+        font-size: 130px;
+    }
+    .buyNow {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1110px){
+    .buyHeading {
+        font-size: 120px;
+    }
+    .buyNow {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 780px){
+    .buyHeading {
+        font-size: 90px;
+    }
+    .buyNow {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 558px){
+    .buyHeading {
+        font-size: 60px;
+    }
+    .buyNow {
+        font-size: 30px;
+        right: 10px;
+    }
+}
