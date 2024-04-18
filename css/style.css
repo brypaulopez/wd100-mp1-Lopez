@@ -158,7 +158,10 @@
     padding: auto; margin: auto;
     padding-left: 100px;
 }
-.carousel-indicators button {
+.car-indi1 button {
+    background-color: #d43939 !important;
+}
+.car-indi2 button {
     background-color: black !important;
 }
 .stefan {
