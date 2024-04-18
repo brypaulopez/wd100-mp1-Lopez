@@ -1,3 +1,4 @@
+
 .navbar-brand img {
     width: 130px; height: 130px;
 
@@ -87,11 +88,198 @@
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 50px;
 }
-h1 {
+/* SECOND LANDING PAGE */
+.second-bg {
+    margin: auto;
+    text-align: center;
+}
+.second-bg h2 {
+    font-size: 100px;
+    font-weight: bold;
+}
+.second-bg a {
+    text-decoration: none;
+    color: black;
+}
+.second-bg p {
+    font-size: 25px;
+}
+/* THIRD LANDING PAGE */
+.third {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.features div {
+    position: relative;
+}
+.features {
+    overflow: hidden !important;
+}
+.features .features-message {
+    position: absolute;
+    bottom: 0; left: 0;
+    color: white;
+    padding-left: 20px;
+    font-size: 40px;
+}
+/* bottom part carousel */
+/* body {
+    background: linear-gradient(-90deg, white 50%, #811919 50%);
+} */
+.img-text {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    border-radius: 15px;
+    align-items: center;
+}
+.img-text h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.img-area {
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.img-area img {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.box-img {
+    padding: auto; margin: auto;
+    padding-left: 100px;
+}
+.carousel-indicators button {
+    background-color: black !important;
+}
+.stefan {
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+/* footer */
+footer {
+    background-color: #111111 !important;
+}
+.logo-footer {
+    width: 50px; height: 50px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    border-bottom: solid 1px white;
+}
+.col-2nd {
+    padding-left: 20px;
+}
+footer li {
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 0px !important;
+}
+
+/* MEN HTML CSS
+-
+-
+*/
+.men-shoes img{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+.mens-button {
+    margin-left: 39%;
+}
+.card {
+    margin: 0; padding: 0;
+}
+.card-title {
+    text-align: center;
+}
+.card-subtitle {
+    text-align: center;
+}
+/* MODAL MEN */
+#exampleModal1 img {
+    border-radius: 30px;
+}
+.row-sizes .col-md-3 {
+    text-align: center;
+}
+.row-sizes label input[type="checkbox"] {
+    display: none;
+}
+.modal-fullscreen .btn-light {
+    width: 100%;
+}
+.row-sizes label {
+    cursor: pointer;
+}
+.row-sizes label span {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color: #262626;
+    padding: 15px 30px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    font-size: 20px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+    border: solid 1px black;
+}
+.row-sizes label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, .1);
+}
+.row-sizes label input[type="checkbox"]:checked ~ span {
+    background: #4d4b4b;
+    border: solid 2px rgb(131, 126, 126);
+    color: white;
+}
+/* COPY INDEX FOR CART */
+.fa-exclamation {
+    position: absolute;
+    color: red;
+    border-radius: 10px;
+    z-index: 100;
+    top: 35px;
+    right: 45px;
+}
+
+/* Default css */
+h1 , h2, h3, h4{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+a {
+    font-family: "Poppins", sans-serif;
+}
+p {
+    font-family: "Poppins", sans-serif;
+}
+li {
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+}
+/* media query */
 @media screen and (max-width: 1194px){
     .buyHeading {
         font-size: 130px;
@@ -123,5 +311,16 @@ h1 {
     .buyNow {
         font-size: 30px;
         right: 10px;
+    }
+}
+@media screen and (max-width: 767px){
+    footer ul li {
+        display: none;
+    }
+    footer ul {
+        display: none;
+    }
+    .col-footer {
+        display: none;
     }
 }
