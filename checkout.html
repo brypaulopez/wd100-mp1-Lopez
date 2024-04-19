@@ -64,7 +64,178 @@
             </div>
         </div>
     </nav>
-
+    <div class="container mt-3">
+        <div class="row check-out-page">
+            <!-- first column -->
+            <div class="col-md-8">
+                <h2>Checkout</h2>
+                <br><br>
+                <h3>Shipping</h3>
+                <hr>
+                <h5>Shipping address:</h5>
+                <form action="" class="row d-flex form-col1 g-3">
+                    <div class="col-md-5">
+                        <label for="first-name">Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="address1">Address 1</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="address2">Address 2 (optional)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" required>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="zipcode">Zip code</label>
+                        <input type="text" class="form-control">
+                        <div class="invalid-feedback" id="zipcode" required>
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <h5>Payment</h5>
+                    <div class="col-md-5 mt-0">
+                        <label for="card-number">Card Number</label>
+                        <input type="number" class="form-control" placeholder="0000 0000 0000 0000" id="card-number" required>
+                    </div>
+                    <div class="col-md-3 mt-0">
+                        <label for="card-expiry">Expiry Date</label>
+                        <input type="date" class="form-control" placeholder="MM/YY" id="card-expiry" required>
+                    </div>
+                    <div class="col-md-2 mt-0">
+                        <label for="card-cvv">CVV</label>
+                        <input type="number" class="form-control" placeholder="CVV" id="card-cvv" required>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                          </label>
+                          <div class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <a href="index.html">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </a>
+                    </div>
+                </form>
+                <!-- <div class="row d-flex justify-content-center mt-5 mb-3">
+                    <div class="col-12 text-center">
+                        <h2>Done submitting your shipping address?
+                            <br><p>Proceed</p>
+                        </h2>
+                    </div>
+                    <div class="col-6 text-center">
+                        <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#successModal">Place Older</button>
+                        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- second column -->
+            <div class="col-md-4 bg-light d-none d-sm-none d-md-block">
+                <h3>Order Summary</h3>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-4 pe-0">
+                        <p>Subtotal (1):</p>
+                    </div>
+                    <div class="col-3 p-0 text-center">
+                        <p>&#8369; 120,000</p>
+                    </div>
+                    <div class="col-6 pe-0">
+                        <p>Estimated Tax:</p>
+                    </div>
+                    <div class="col-3 p-0 text-center">
+                        <p>&#8369; 0.00</p>
+                    </div>
+                    <div class="col-8 pe-0">
+                        <p>Estimated Shipping Standard</p>
+                    </div>
+                    <div class="col-3 p-0 text-center">
+                        <p>&#8369; 300</p>
+                    </div>
+                </div>
+                <hr class="m-0 mb-1">
+                <div class="row d-flex justify-content-between mb-5">
+                    <div class="col-6 pe-0 mb-3 mt-3">
+                        <h4>Estimated Total:</h4>
+                    </div>
+                    <div class="col-3 p-0 text-center mt-3">
+                        <p>&#8369; 120,300</p>
+                    </div>
+                    <div class="col-12 m-0">
+                        <h6 class="m-0">Apply Promo Code</h6>
+                    </div>
+                    <div class="col-8">
+                        <form action="">
+                            <input type="text" class="form-control">
+                        </form>
+                    </div>
+                    <div class="col-4 text-center">
+                        <button class="btn btn-dark w-100">Apply</button>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <h4>Bag Summary (1 item)</h4>
+                        <hr>
+                    </div>
+                    <div class="col-5">
+                        <img src="img/fragment-blue-low.webp" alt="" class="w-100">
+                    </div>
+                    <div class="col-7">
+                        <h6>Air Jordan 1 Low fragment design x Travis Scott</h6>
+                        <p>Sku: 1361524-090-SM</p>
+                        <p>Size: 9.5 US</p>
+                        <p>Qty: 1</p>
+                        <p>&#8369; 120,000</p>
+                    </div>
+                    <div class="col-12">
+                        <p><span><a href="#" class="text-dark">Privacy Policy</a></span> | <span><a href="#" class="text-dark">Terms & Conditions</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <div class="row">
